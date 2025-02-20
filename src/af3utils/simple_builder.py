@@ -64,7 +64,7 @@ class SimpleBuilder(InputBuilder):
             Returns the current instance of the object to allow method chaining.
         """
        
-        ligand = SMILigand([smiles_str], seq_id=seq_id, num=num)
+        ligand = SMILigand(smiles_str, seq_id=seq_id, num=num)
         self._afinput.ligands.append(ligand)
         return self
     
